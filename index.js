@@ -12,8 +12,7 @@ if (!databaseUri) {
 }
 
 var api = new ParseServer({
-  databaseURI: databaseUri || 'mongodb://heroku_gnpks1lz:kdk8clh3ri34oj7h0am6ao9pbi@ds145230.mlab.com:45230/heroku_gnpks1lz
-',
+  databaseURI: databaseUri || 'mongodb://heroku_gnpks1lz:kdk8clh3ri34oj7h0am6ao9pbi@ds145230.mlab.com:45230/heroku_gnpks1lz',
   cloud: process.env.CLOUD_CODE_MAIN || __dirname + '/cloud/main.js',
   appId: process.env.APP_ID || 'smartcity-smarthouse',
   masterKey: process.env.MASTER_KEY || '', //Add your master key here. Keep it secret!
