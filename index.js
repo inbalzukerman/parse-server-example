@@ -12,11 +12,11 @@ if (!databaseUri) {
 }
 
 var api = new ParseServer({
-  databaseURI: databaseUri || 'mongodb://heroku_gnpks1lz:kdk8clh3ri34oj7h0am6ao9pbi@ds145230.mlab.com:45230/heroku_gnpks1lz',
+  databaseURI: databaseUri ||'mongodb://heroku_h7w1c9ch:6mpmo49al822t46ev91mqrf78a@ds145780.mlab.com:45780/heroku_h7w1c9ch',
   cloud: process.env.CLOUD_CODE_MAIN || __dirname + '/cloud/main.js',
-  appId: process.env.APP_ID || 'smartcity-smarthouse',
+  appId: process.env.APP_ID || 'myAppId',
   masterKey: process.env.MASTER_KEY || '', //Add your master key here. Keep it secret!
-  serverURL: process.env.SERVER_URL || 'https://smartcity-smarthouse.herokuapp.com/parse',  // Don't forget to change to https if needed
+  serverURL: process.env.SERVER_URL || 'http://smartcity-smarthouse.herokuapp.com/parse',  // Don't forget to change to https if needed
   liveQuery: {
     classNames: ["Posts", "Comments"] // List of classes to support for query subscriptions
   }
